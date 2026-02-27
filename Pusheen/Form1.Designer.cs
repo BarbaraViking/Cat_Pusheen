@@ -32,13 +32,14 @@
             pictureBox1 = new PictureBox();
             button1 = new Button();
             label1 = new Label();
+            mainPanel = new Panel();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // pictureBox1
             // 
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(235, 102);
+            pictureBox1.Location = new Point(224, 152);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(339, 250);
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -55,6 +56,7 @@
             button1.TabIndex = 1;
             button1.Text = "Play";
             button1.UseVisualStyleBackColor = false;
+            button1.Click += button1_Click;
             // 
             // label1
             // 
@@ -66,6 +68,14 @@
             label1.TabIndex = 2;
             label1.Text = "Pusheen's Life";
             // 
+            // mainPanel
+            // 
+            mainPanel.Dock = DockStyle.Fill;
+            mainPanel.Location = new Point(0, 0);
+            mainPanel.Name = "mainPanel";
+            mainPanel.Size = new Size(800, 450);
+            mainPanel.TabIndex = 3;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -74,6 +84,7 @@
             Controls.Add(label1);
             Controls.Add(button1);
             Controls.Add(pictureBox1);
+            Controls.Add(mainPanel);
             Name = "Form1";
             Text = "Form1";
             Load += Form1_Load;
@@ -87,5 +98,6 @@
         private PictureBox pictureBox1;
         private Button button1;
         private Label label1;
+        private Panel mainPanel;
     }
 }
