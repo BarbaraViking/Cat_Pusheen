@@ -45,6 +45,10 @@
             pictureBox7 = new PictureBox();
             label8 = new Label();
             label9 = new Label();
+            pictureBox8 = new PictureBox();
+            pictureBox9 = new PictureBox();
+            label10 = new Label();
+            label11 = new Label();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
@@ -52,6 +56,8 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox6).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox7).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox8).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox9).BeginInit();
             SuspendLayout();
             // 
             // pictureBox1
@@ -69,17 +75,18 @@
             pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
             pictureBox2.Location = new Point(24, 63);
             pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(125, 117);
+            pictureBox2.Size = new Size(108, 90);
             pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox2.TabIndex = 1;
             pictureBox2.TabStop = false;
+            pictureBox2.Click += pictureBox2_Click;
             // 
             // pictureBox3
             // 
             pictureBox3.Image = (Image)resources.GetObject("pictureBox3.Image");
-            pictureBox3.Location = new Point(24, 208);
+            pictureBox3.Location = new Point(24, 186);
             pictureBox3.Name = "pictureBox3";
-            pictureBox3.Size = new Size(125, 109);
+            pictureBox3.Size = new Size(108, 90);
             pictureBox3.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox3.TabIndex = 2;
             pictureBox3.TabStop = false;
@@ -89,7 +96,7 @@
             pictureBox4.Image = (Image)resources.GetObject("pictureBox4.Image");
             pictureBox4.Location = new Point(636, 63);
             pictureBox4.Name = "pictureBox4";
-            pictureBox4.Size = new Size(125, 117);
+            pictureBox4.Size = new Size(108, 90);
             pictureBox4.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox4.TabIndex = 3;
             pictureBox4.TabStop = false;
@@ -97,9 +104,9 @@
             // pictureBox5
             // 
             pictureBox5.Image = (Image)resources.GetObject("pictureBox5.Image");
-            pictureBox5.Location = new Point(636, 208);
+            pictureBox5.Location = new Point(636, 186);
             pictureBox5.Name = "pictureBox5";
-            pictureBox5.Size = new Size(125, 117);
+            pictureBox5.Size = new Size(108, 90);
             pictureBox5.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox5.TabIndex = 4;
             pictureBox5.TabStop = false;
@@ -108,7 +115,7 @@
             // 
             label1.AutoSize = true;
             label1.Font = new Font("MV Boli", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.Location = new Point(664, 328);
+            label1.Location = new Point(654, 155);
             label1.Name = "label1";
             label1.Size = new Size(67, 28);
             label1.TabIndex = 5;
@@ -119,7 +126,7 @@
             // 
             label2.AutoSize = true;
             label2.Font = new Font("MV Boli", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label2.Location = new Point(664, 32);
+            label2.Location = new Point(659, 32);
             label2.Name = "label2";
             label2.Size = new Size(62, 28);
             label2.TabIndex = 6;
@@ -129,7 +136,7 @@
             // 
             label3.AutoSize = true;
             label3.Font = new Font("MV Boli", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label3.Location = new Point(50, 328);
+            label3.Location = new Point(50, 156);
             label3.Name = "label3";
             label3.Size = new Size(49, 28);
             label3.TabIndex = 7;
@@ -216,11 +223,55 @@
             label9.TabIndex = 17;
             label9.Text = "100%";
             // 
+            // pictureBox8
+            // 
+            pictureBox8.Image = (Image)resources.GetObject("pictureBox8.Image");
+            pictureBox8.Location = new Point(636, 305);
+            pictureBox8.Name = "pictureBox8";
+            pictureBox8.Size = new Size(108, 90);
+            pictureBox8.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox8.TabIndex = 18;
+            pictureBox8.TabStop = false;
+            // 
+            // pictureBox9
+            // 
+            pictureBox9.Image = (Image)resources.GetObject("pictureBox9.Image");
+            pictureBox9.Location = new Point(24, 305);
+            pictureBox9.Name = "pictureBox9";
+            pictureBox9.Size = new Size(108, 90);
+            pictureBox9.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox9.TabIndex = 19;
+            pictureBox9.TabStop = false;
+            // 
+            // label10
+            // 
+            label10.AutoSize = true;
+            label10.Font = new Font("MV Boli", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label10.Location = new Point(50, 279);
+            label10.Name = "label10";
+            label10.Size = new Size(56, 28);
+            label10.TabIndex = 20;
+            label10.Text = "Play";
+            // 
+            // label11
+            // 
+            label11.AutoSize = true;
+            label11.Font = new Font("MV Boli", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label11.Location = new Point(665, 279);
+            label11.Name = "label11";
+            label11.Size = new Size(60, 28);
+            label11.TabIndex = 21;
+            label11.Text = "Walk";
+            // 
             // Form2
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(label11);
+            Controls.Add(label10);
+            Controls.Add(pictureBox9);
+            Controls.Add(pictureBox8);
             Controls.Add(label9);
             Controls.Add(label8);
             Controls.Add(pictureBox7);
@@ -239,6 +290,7 @@
             Controls.Add(pictureBox1);
             Name = "Form2";
             Text = "Form2";
+            Load += Form2_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
@@ -246,6 +298,8 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox5).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox6).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox7).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox8).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox9).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -268,5 +322,9 @@
         private PictureBox pictureBox7;
         private Label label8;
         private Label label9;
+        private PictureBox pictureBox8;
+        private PictureBox pictureBox9;
+        private Label label10;
+        private Label label11;
     }
 }
