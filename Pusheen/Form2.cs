@@ -36,12 +36,24 @@ namespace Pusheen
 
         private void pictureBox2_Click(object sender, EventArgs e)
         {
-
         }
 
         private void Form2_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void pictureBox1_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox3_Click(object sender, EventArgs e) // eating
+        {
+            string[] variants = { @"C:\Users\barbara\Downloads\gif\flake.gif", @"C:\Users\barbara\Downloads\gif\eat.gif", @"C:\Users\barbara\Downloads\gif\eat2.gif", @"C:\Users\barbara\Downloads\gif\eat3.gif", @"C:\Users\barbara\Downloads\gif\eat4.gif" };
+            Random rd = new Random();
+            string randomItem = variants[rd.Next(variants.Length)]; 
+            pictureBox1.Image = Image.FromFile(randomItem);
         }
     }
 }
