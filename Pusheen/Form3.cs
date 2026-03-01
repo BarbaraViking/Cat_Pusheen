@@ -16,7 +16,7 @@ namespace Pusheen
     {
         public Form3()
         {
-            InitializeComponent(); 
+            InitializeComponent();
             this.BackColor = Color.FromArgb(252, 240, 228);
         }
 
@@ -40,9 +40,13 @@ namespace Pusheen
         {
             Form2 form2 = new Form2();
             form2.Show();
-            
+
         }
 
-        
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+            Form5 form5 = new Form5();
+            form5.Show();
+        }
     }
 }
