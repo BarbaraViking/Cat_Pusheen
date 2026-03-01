@@ -4,9 +4,11 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Reflection.Metadata;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.AxHost;
 
 namespace Pusheen
 {
@@ -14,12 +16,14 @@ namespace Pusheen
     {
         public Form3()
         {
-            InitializeComponent();
+            InitializeComponent(); 
+            this.BackColor = Color.FromArgb(252, 240, 228);
         }
 
         private void pictureBox2_Click(object sender, EventArgs e)
         {
-
+            Form4 form4 = new Form4();
+            form4.Show();
         }
 
         private void label2_Click(object sender, EventArgs e)
