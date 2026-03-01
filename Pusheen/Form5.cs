@@ -21,6 +21,7 @@ namespace Pusheen
         public Form5()
         {
             InitializeComponent();
+            this.BackColor = Color.FromArgb(252, 240, 228);
         }
 
         private void Form5_Load(object sender, EventArgs e)

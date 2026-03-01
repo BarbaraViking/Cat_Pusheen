@@ -177,6 +177,7 @@
             pictureBox14.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox14.TabIndex = 23;
             pictureBox14.TabStop = false;
+            pictureBox14.Click += pictureBox14_Click_1;
             // 
             // pictureBox15
             // 
