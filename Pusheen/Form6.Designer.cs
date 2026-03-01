@@ -131,9 +131,9 @@
             label1.Font = new Font("MV Boli", 30F, FontStyle.Bold);
             label1.Location = new Point(453, 18);
             label1.Name = "label1";
-            label1.Size = new Size(119, 52);
+            label1.Size = new Size(158, 52);
             label1.TabIndex = 33;
-            label1.Text = "Paid:";
+            label1.Text = "Happy:";
             // 
             // label2
             // 
@@ -142,9 +142,9 @@
             label2.Font = new Font("MV Boli", 30F, FontStyle.Bold);
             label2.Location = new Point(595, 18);
             label2.Name = "label2";
-            label2.Size = new Size(74, 52);
+            label2.Size = new Size(51, 52);
             label2.TabIndex = 34;
-            label2.Text = "0$";
+            label2.Text = "0";
             label2.Click += label2_Click;
             // 
             // pictureBox7

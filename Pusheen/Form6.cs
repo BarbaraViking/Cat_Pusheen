@@ -53,13 +53,13 @@ namespace Pusheen
             pictureBox7.Image = Image.FromFile(@"C:\Users\barbara\Downloads\Screenshot_33-edited-free (carve.photos).png");
             pictureBox7.Size = new Size(174, 164);
             pictureBox7.Location = new Point(283, 113);
-            label2.Text = $"{paid}$";
+            label2.Text = $"{paid}";
         }
 
         private void pictureBox5_Click(object sender, EventArgs e)
         {
-            Form4 form4 = new Form4();
-            form4.Show();
+            Form4 form3 = new Form4();
+            form3.Show();
         }
 
         private void pictureBox10_Click(object sender, EventArgs e)
