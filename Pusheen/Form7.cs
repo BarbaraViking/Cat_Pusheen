@@ -55,12 +55,12 @@ namespace Pusheen
                     label4.Text = "+0.4";
                 }
             }
-                else
-                {
-                    timer1.Stop();
-                    MessageBox.Show("Успешно!");
+            else
+            {
+                timer1.Stop();
+                Form8 form8 = new Form8();
+                form8.Show();
             }
-
         }
 
         private void label1_Click(object sender, EventArgs e)

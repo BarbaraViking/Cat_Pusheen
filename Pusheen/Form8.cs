@@ -15,6 +15,25 @@ namespace Pusheen
         public Form8()
         {
             InitializeComponent();
+            this.BackColor = Color.FromArgb(252, 240, 228);
+            List<string> words = new List<string>
+            {
+                "Puurrrfect!",
+                "Meowgical!",
+                "Purr-fection!"
+            };
+            label1.Text = words[new Random().Next(words.Count)];
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
