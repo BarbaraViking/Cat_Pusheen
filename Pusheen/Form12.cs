@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace Pusheen
 {
-    public partial class Form10 : Form
+    public partial class Form12 : Form
     {
-        public Form10()
+        public Form12()
         {
             InitializeComponent();
-        }
-
-        private void Form10_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }

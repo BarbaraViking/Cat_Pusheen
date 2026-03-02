@@ -63,7 +63,12 @@ namespace Pusheen
                 balls.Remove(clickedBall);
                 clickedBall.Dispose();
                 count_ball++; // увеличиваем счетчик
-                label1.Text = $"{count_ball}";
+                label1.Text = $"{count_ball}/10";
+                if (count_ball == 10)
+                {
+                    Form8 form8 = new Form8();
+                    form8.Show();
+                }
 
                 // или выводим сообщение
             }
@@ -93,6 +98,11 @@ namespace Pusheen
         {
             Form3 form3 = new Form3();
             form3.Show();
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -114,6 +114,7 @@
             Controls.Add(label2);
             Name = "Form10";
             Text = "Form10";
+            Load += Form10_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
