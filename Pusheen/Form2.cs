@@ -36,6 +36,8 @@ namespace Pusheen
 
         private void pictureBox2_Click(object sender, EventArgs e)
         {
+            Form7 form7 = new Form7();
+            form7.Show();
         }
 
         private void Form2_Load(object sender, EventArgs e)

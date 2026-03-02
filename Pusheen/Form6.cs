@@ -29,7 +29,7 @@ namespace Pusheen
             pictureBox7.Image = Image.FromFile(@"C:\Users\barbara\Downloads\Screenshot_36-edited-free (carve.photos).png");
             pictureBox7.Size = new Size(166, 167);
             pictureBox7.Location = new Point(288, 108);
-            label2.Text = $"{paid}$";
+            label2.Text = $"{paid}";
         }
         //278, 113
         //184, 169
@@ -44,7 +44,7 @@ namespace Pusheen
             pictureBox7.Image = Image.FromFile(@"C:\Users\barbara\Downloads\Screenshot_37-edited-free (carve.photos).png");
             pictureBox7.Size = new Size(159, 166);
             pictureBox7.Location = new Point(291, 109);
-            label2.Text = $"{paid}$";
+            label2.Text = $"{paid}";
         }
 
         private void pictureBox4_Click(object sender, EventArgs e)
