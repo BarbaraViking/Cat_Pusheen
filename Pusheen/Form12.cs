@@ -15,6 +15,18 @@ namespace Pusheen
         public Form12()
         {
             InitializeComponent();
+            this.BackColor = Color.FromArgb(252, 240, 228);
+        }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+            Form9 form9 = new Form9();
+            form9.Show();
+        }
+
+        private void Form12_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

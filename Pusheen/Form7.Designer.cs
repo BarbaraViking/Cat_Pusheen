@@ -72,6 +72,7 @@
             progressBar1.Name = "progressBar1";
             progressBar1.Size = new Size(436, 60);
             progressBar1.TabIndex = 18;
+            progressBar1.Click += this.progressBar1_Click;
             // 
             // label2
             // 
@@ -82,6 +83,7 @@
             label2.Size = new Size(97, 63);
             label2.TabIndex = 19;
             label2.Text = "0%";
+            label2.Click += label2_Click_1;
             // 
             // label4
             // 
@@ -103,6 +105,7 @@
             label5.Size = new Size(184, 114);
             label5.TabIndex = 22;
             label5.Text = "+0.1";
+            label5.Click += this.label5_Click;
             // 
             // label6
             // 

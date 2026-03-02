@@ -10,30 +10,28 @@ using System.Windows.Forms;
 
 namespace Pusheen
 {
-    public partial class Form10 : Form
+    public partial class Form15 : Form
     {
-        public Form10()
+        public Form15()
         {
             InitializeComponent();
-            this.BackColor = Color.FromArgb(252, 240, 228);
-
         }
 
-        private void Form10_Load(object sender, EventArgs e)
+        private void pictureBox1_Click(object sender, EventArgs e)
         {
 
         }
 
         private void pictureBox2_Click(object sender, EventArgs e)
         {
-            Form9 form = new Form9();
-            form.Show();
+            Form14 form14 = new Form14();
+            form14.Show();
         }
 
-        private void pictureBox1_Click(object sender, EventArgs e)
+        private void pictureBox4_Click(object sender, EventArgs e)
         {
-            Form11 form11 = new Form11();
-            form11.Show();
+            Form2 form2 = new Form2();
+            form2.Show();
         }
     }
 }

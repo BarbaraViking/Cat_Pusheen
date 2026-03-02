@@ -63,5 +63,22 @@ namespace Pusheen
             Form3 form3 = new Form3();
             form3.Show();
         }
+
+        private void pictureBox4_Click(object sender, EventArgs e)
+        {
+            Form12 form12 = new Form12();
+            form12.Show();
+        }
+
+        private void pictureBox5_Click(object sender, EventArgs e)
+        {
+            Form13 form13 = new Form13();
+            form13.Show();
+        }
+
+        private void pictureBox8_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

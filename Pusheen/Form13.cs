@@ -10,11 +10,13 @@ using System.Windows.Forms;
 
 namespace Pusheen
 {
-    public partial class Form7 : Form
+    public partial class Form13 : Form
     {
         List<Image> frames = new List<Image>();
+        string[] variants = { @"C:\Users\barbara\Downloads\gif\sleep1.gif", @"C:\Users\barbara\Downloads\gif\sleep2.gif", @"C:\Users\barbara\Downloads\gif\sleep3.gif" };
+
         int currentIndex = 0;
-        public Form7()
+        public Form13()
         {
             InitializeComponent();
             this.BackColor = Color.FromArgb(252, 240, 228);
@@ -25,11 +27,10 @@ namespace Pusheen
             label5.Text = "";
             label6.Text = "";
             label7.Text = "";
+            Random rd = new Random();
+            string randomItem = variants[rd.Next(variants.Length)];
+            pictureBox2.Image = Image.FromFile(randomItem);
 
-        }
-
-        private void pictureBox6_Click(object sender, EventArgs e)
-        {
         }
         private void Timer1_Tick(object sender, EventArgs e)
         {
@@ -62,13 +63,7 @@ namespace Pusheen
                 form8.Show();
             }
         }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label3_Click(object sender, EventArgs e)
+        private void Form13_Load(object sender, EventArgs e)
         {
 
         }
@@ -78,34 +73,7 @@ namespace Pusheen
 
         }
 
-        private void label7_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-        private void progressBar1_Click(object sender, EventArgs e)
-        {
-
-        }
-        private void Form7_Load(object sender, EventArgs e)
-        {
-
-        }
-        
-        private void label5_Click(object sender, EventArgs e)
-        {
-
-        }
-        private void label6_Click(object sender, EventArgs e)
-        {
-
-        }
-        //label5_Click
-        private void label2_Click_1(object sender, EventArgs e)
+        private void pictureBox2_Click(object sender, EventArgs e)
         {
 
         }

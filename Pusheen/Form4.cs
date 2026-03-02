@@ -138,7 +138,7 @@ namespace Pusheen
             }
             else if (click7 == 2)
             {
-                pictureBox9.Image = Image.FromFile(@"C:\Users\barbara\Desktop\дз англ\Screenshot_18.jpg");
+                pictureBox9.Image = Image.FromFile(@"C:\Users\barbara\Desktop\дз англ\background.jpg");
                 click7 = 0;
             }
 
@@ -153,14 +153,14 @@ namespace Pusheen
             }
             else if (click8 == 2)
             {
-                pictureBox9.Image = Image.FromFile(@"C:\Users\barbara\Desktop\дз англ\Screenshot_18.jpg");
+                pictureBox9.Image = Image.FromFile(@"C:\Users\barbara\Desktop\дз англ\background.jpg");
                 click8 = 0;
             }
         }
 
         private void pictureBox10_Click(object sender, EventArgs e)
         {
-            Form4 form3 = new Form4();
+            Form3 form3 = new Form3();
             form3.Show();
         }
 
