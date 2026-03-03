@@ -34,7 +34,6 @@
             pictureBox3 = new PictureBox();
             pictureBox4 = new PictureBox();
             pictureBox10 = new PictureBox();
-            pictureBox5 = new PictureBox();
             pictureBox6 = new PictureBox();
             label1 = new Label();
             label2 = new Label();
@@ -44,7 +43,6 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox10).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox6).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox7).BeginInit();
             SuspendLayout();
@@ -103,17 +101,6 @@
             pictureBox10.TabStop = false;
             pictureBox10.Click += pictureBox10_Click;
             // 
-            // pictureBox5
-            // 
-            pictureBox5.Image = (Image)resources.GetObject("pictureBox5.Image");
-            pictureBox5.Location = new Point(723, -1);
-            pictureBox5.Name = "pictureBox5";
-            pictureBox5.Size = new Size(81, 71);
-            pictureBox5.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox5.TabIndex = 31;
-            pictureBox5.TabStop = false;
-            pictureBox5.Click += pictureBox5_Click;
-            // 
             // pictureBox6
             // 
             pictureBox6.Image = (Image)resources.GetObject("pictureBox6.Image");
@@ -166,7 +153,6 @@
             Controls.Add(label2);
             Controls.Add(label1);
             Controls.Add(pictureBox6);
-            Controls.Add(pictureBox5);
             Controls.Add(pictureBox10);
             Controls.Add(pictureBox4);
             Controls.Add(pictureBox2);
@@ -179,7 +165,6 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox10).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox5).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox6).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox7).EndInit();
             ResumeLayout(false);
@@ -193,7 +178,6 @@
         private PictureBox pictureBox3;
         private PictureBox pictureBox4;
         private PictureBox pictureBox10;
-        private PictureBox pictureBox5;
         private PictureBox pictureBox6;
         private Label label1;
         private Label label2;

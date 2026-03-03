@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form2));
             pictureBox1 = new PictureBox();
             pictureBox2 = new PictureBox();
@@ -40,22 +41,19 @@
             label4 = new Label();
             label5 = new Label();
             label6 = new Label();
-            label7 = new Label();
-            pictureBox6 = new PictureBox();
-            pictureBox7 = new PictureBox();
             label8 = new Label();
-            label9 = new Label();
             pictureBox9 = new PictureBox();
             label10 = new Label();
             label11 = new Label();
             pictureBox8 = new PictureBox();
+            label7 = new Label();
+            timer1 = new System.Windows.Forms.Timer(components);
+            progressBar1 = new ProgressBar();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox6).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox7).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox9).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox8).BeginInit();
             SuspendLayout();
@@ -170,62 +168,22 @@
             // 
             label6.AutoSize = true;
             label6.Font = new Font("MV Boli", 11F, FontStyle.Bold);
-            label6.Location = new Point(190, 12);
+            label6.Location = new Point(215, 46);
             label6.Name = "label6";
             label6.Size = new Size(62, 20);
             label6.TabIndex = 11;
             label6.Text = "Happy:";
             // 
-            // label7
-            // 
-            label7.AutoSize = true;
-            label7.Font = new Font("MV Boli", 11F, FontStyle.Bold);
-            label7.Location = new Point(190, 53);
-            label7.Name = "label7";
-            label7.Size = new Size(82, 20);
-            label7.TabIndex = 13;
-            label7.Text = "Healthing";
-            // 
-            // pictureBox6
-            // 
-            pictureBox6.Image = (Image)resources.GetObject("pictureBox6.Image");
-            pictureBox6.Location = new Point(258, -2);
-            pictureBox6.Name = "pictureBox6";
-            pictureBox6.Size = new Size(164, 39);
-            pictureBox6.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox6.TabIndex = 14;
-            pictureBox6.TabStop = false;
-            // 
-            // pictureBox7
-            // 
-            pictureBox7.Image = (Image)resources.GetObject("pictureBox7.Image");
-            pictureBox7.Location = new Point(278, 43);
-            pictureBox7.Name = "pictureBox7";
-            pictureBox7.Size = new Size(164, 39);
-            pictureBox7.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox7.TabIndex = 15;
-            pictureBox7.TabStop = false;
-            // 
             // label8
             // 
             label8.AutoSize = true;
             label8.Font = new Font("MV Boli", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label8.Location = new Point(428, 6);
+            label8.Location = new Point(451, 40);
             label8.Name = "label8";
             label8.Size = new Size(69, 28);
             label8.TabIndex = 16;
             label8.Text = "100%";
             label8.Click += label8_Click;
-            // 
-            // label9
-            // 
-            label9.AutoSize = true;
-            label9.Font = new Font("MV Boli", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label9.Location = new Point(448, 53);
-            label9.Name = "label9";
-            label9.Size = new Size(69, 28);
-            label9.TabIndex = 17;
-            label9.Text = "100%";
             // 
             // pictureBox9
             // 
@@ -269,20 +227,35 @@
             pictureBox8.TabStop = false;
             pictureBox8.Click += pictureBox8_Click_1;
             // 
+            // label7
+            // 
+            label7.AutoSize = true;
+            label7.Font = new Font("MV Boli", 7F, FontStyle.Bold);
+            label7.Location = new Point(12, 398);
+            label7.Name = "label7";
+            label7.Size = new Size(171, 13);
+            label7.TabIndex = 23;
+            label7.Text = "happiness will not be added!";
+            // 
+            // progressBar1
+            // 
+            progressBar1.Location = new Point(283, 40);
+            progressBar1.Name = "progressBar1";
+            progressBar1.Size = new Size(153, 28);
+            progressBar1.TabIndex = 24;
+            // 
             // Form2
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(progressBar1);
+            Controls.Add(label7);
             Controls.Add(pictureBox8);
             Controls.Add(label11);
             Controls.Add(label10);
             Controls.Add(pictureBox9);
-            Controls.Add(label9);
             Controls.Add(label8);
-            Controls.Add(pictureBox7);
-            Controls.Add(pictureBox6);
-            Controls.Add(label7);
             Controls.Add(label6);
             Controls.Add(label5);
             Controls.Add(label4);
@@ -302,8 +275,6 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox5).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox6).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox7).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox9).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox8).EndInit();
             ResumeLayout(false);
@@ -323,14 +294,13 @@
         private Label label4;
         private Label label5;
         private Label label6;
-        private Label label7;
-        private PictureBox pictureBox6;
-        private PictureBox pictureBox7;
         private Label label8;
-        private Label label9;
         private PictureBox pictureBox9;
         private Label label10;
         private Label label11;
         private PictureBox pictureBox8;
+        private Label label7;
+        private System.Windows.Forms.Timer timer1;
+        private ProgressBar progressBar1;
     }
 }

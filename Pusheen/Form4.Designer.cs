@@ -32,7 +32,6 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form4));
             pictureBox1 = new PictureBox();
             label1 = new Label();
-            pictureBox4 = new PictureBox();
             pictureBox2 = new PictureBox();
             pictureBox3 = new PictureBox();
             pictureBox5 = new PictureBox();
@@ -49,7 +48,6 @@
             timer1 = new System.Windows.Forms.Timer(components);
             pictureBox10 = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
@@ -82,17 +80,6 @@
             label1.Size = new Size(537, 34);
             label1.TabIndex = 1;
             label1.Text = "Choose what to wear to fluffy today!";
-            // 
-            // pictureBox4
-            // 
-            pictureBox4.Image = (Image)resources.GetObject("pictureBox4.Image");
-            pictureBox4.Location = new Point(720, -1);
-            pictureBox4.Name = "pictureBox4";
-            pictureBox4.Size = new Size(81, 71);
-            pictureBox4.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox4.TabIndex = 9;
-            pictureBox4.TabStop = false;
-            pictureBox4.Click += pictureBox4_Click;
             // 
             // pictureBox2
             // 
@@ -267,14 +254,12 @@
             Controls.Add(pictureBox5);
             Controls.Add(pictureBox3);
             Controls.Add(pictureBox2);
-            Controls.Add(pictureBox4);
             Controls.Add(label1);
             Controls.Add(pictureBox1);
             Name = "Form4";
             Text = "Form4";
             Load += Form4_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox5).EndInit();
@@ -294,7 +279,6 @@
 
         private PictureBox pictureBox1;
         private Label label1;
-        private PictureBox pictureBox4;
         private PictureBox pictureBox2;
         private PictureBox pictureBox3;
         private PictureBox pictureBox5;

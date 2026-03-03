@@ -38,10 +38,8 @@
             label4 = new Label();
             label1 = new Label();
             pictureBox2 = new PictureBox();
-            pictureBox4 = new PictureBox();
             timer1 = new System.Windows.Forms.Timer(components);
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
             SuspendLayout();
             // 
             // progressBar1
@@ -124,23 +122,11 @@
             pictureBox2.TabStop = false;
             pictureBox2.Click += pictureBox2_Click;
             // 
-            // pictureBox4
-            // 
-            pictureBox4.Image = (Image)resources.GetObject("pictureBox4.Image");
-            pictureBox4.Location = new Point(728, -7);
-            pictureBox4.Name = "pictureBox4";
-            pictureBox4.Size = new Size(81, 71);
-            pictureBox4.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox4.TabIndex = 40;
-            pictureBox4.TabStop = false;
-            pictureBox4.Click += pictureBox4_Click;
-            // 
             // Form16
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
-            Controls.Add(pictureBox4);
             Controls.Add(pictureBox2);
             Controls.Add(label2);
             Controls.Add(label7);
@@ -152,7 +138,6 @@
             Name = "Form16";
             Text = "Form16";
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -167,7 +152,6 @@
         private Label label4;
         private Label label1;
         private PictureBox pictureBox2;
-        private PictureBox pictureBox4;
         private System.Windows.Forms.Timer timer1;
     }
 }

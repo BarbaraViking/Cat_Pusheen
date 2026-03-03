@@ -31,7 +31,6 @@
             components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form7));
             label1 = new Label();
-            pictureBox4 = new PictureBox();
             timer1 = new System.Windows.Forms.Timer(components);
             progressBar1 = new ProgressBar();
             label2 = new Label();
@@ -40,7 +39,6 @@
             label6 = new Label();
             label7 = new Label();
             pictureBox2 = new PictureBox();
-            ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             SuspendLayout();
             // 
@@ -54,17 +52,6 @@
             label1.TabIndex = 16;
             label1.Text = "Painting ";
             label1.Click += label1_Click;
-            // 
-            // pictureBox4
-            // 
-            pictureBox4.Image = (Image)resources.GetObject("pictureBox4.Image");
-            pictureBox4.Location = new Point(721, -6);
-            pictureBox4.Name = "pictureBox4";
-            pictureBox4.Size = new Size(81, 71);
-            pictureBox4.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox4.TabIndex = 17;
-            pictureBox4.TabStop = false;
-            pictureBox4.Click += pictureBox4_Click;
             // 
             // progressBar1
             // 
@@ -153,12 +140,10 @@
             Controls.Add(label4);
             Controls.Add(label2);
             Controls.Add(progressBar1);
-            Controls.Add(pictureBox4);
             Controls.Add(label1);
             Name = "Form7";
             Text = "Form7";
             Load += Form7_Load;
-            ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ResumeLayout(false);
             PerformLayout();
@@ -166,7 +151,6 @@
 
         #endregion
         private Label label1;
-        private PictureBox pictureBox4;
         private System.Windows.Forms.Timer timer1;
         private ProgressBar progressBar1;
         private Label label2;
