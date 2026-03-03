@@ -99,5 +99,15 @@ namespace Pusheen
         {
 
         }
+
+        private void pictureBox8_Click_1(object sender, EventArgs e)
+        {
+            Form16 form16 = new Form16();
+            form16.StartPosition = FormStartPosition.Manual;
+            form16.Location = this.Location;
+
+            form16.Show();
+            this.Hide();
+        }
     }
 }
