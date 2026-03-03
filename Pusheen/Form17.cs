@@ -10,20 +10,17 @@ using System.Windows.Forms;
 
 namespace Pusheen
 {
-    public partial class Form9 : Form
+    public partial class Form17 : Form
     {
-        public Form9()
+        public Form17()
         {
             InitializeComponent();
-            this.BackColor = Color.FromArgb(252, 240, 228);
-
         }
 
-        private void Form9_Load(object sender, EventArgs e)
+        private void label2_Click(object sender, EventArgs e)
         {
 
         }
-
         private void label1_Click(object sender, EventArgs e)
         {
 
@@ -31,11 +28,17 @@ namespace Pusheen
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
-            Form10 form10 = new Form10();
-            form10.StartPosition = FormStartPosition.Manual;
-            form10.Location = this.Location;
+            Form16 form16 = new Form16();
+            form16.Show();
+        }
 
-            form10.Show();
+        private void pictureBox4_Click(object sender, EventArgs e)
+        {
+            Form12 form12 = new Form12();
+            form12.StartPosition = FormStartPosition.Manual;
+            form12.Location = this.Location;
+
+            form12.Show();
             this.Hide();
         }
     }

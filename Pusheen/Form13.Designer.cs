@@ -39,7 +39,9 @@
             progressBar1 = new ProgressBar();
             label2 = new Label();
             timer1 = new System.Windows.Forms.Timer(components);
+            pictureBox5 = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
             SuspendLayout();
             // 
             // label1
@@ -67,7 +69,7 @@
             // 
             label7.AutoSize = true;
             label7.Font = new Font("Myanmar Text", 48F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label7.Location = new Point(599, 27);
+            label7.Location = new Point(599, 50);
             label7.Name = "label7";
             label7.Size = new Size(184, 114);
             label7.TabIndex = 30;
@@ -111,6 +113,7 @@
             progressBar1.Name = "progressBar1";
             progressBar1.Size = new Size(436, 60);
             progressBar1.TabIndex = 31;
+            progressBar1.Click += progressBar1_Click;
             // 
             // label2
             // 
@@ -122,11 +125,23 @@
             label2.TabIndex = 32;
             label2.Text = "0%";
             // 
+            // pictureBox5
+            // 
+            pictureBox5.Image = (Image)resources.GetObject("pictureBox5.Image");
+            pictureBox5.Location = new Point(728, -6);
+            pictureBox5.Name = "pictureBox5";
+            pictureBox5.Size = new Size(81, 71);
+            pictureBox5.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox5.TabIndex = 33;
+            pictureBox5.TabStop = false;
+            pictureBox5.Click += pictureBox5_Click;
+            // 
             // Form13
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(pictureBox5);
             Controls.Add(label2);
             Controls.Add(progressBar1);
             Controls.Add(label7);
@@ -139,6 +154,7 @@
             Text = "Form13";
             Load += Form13_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox5).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -154,5 +170,6 @@
         private ProgressBar progressBar1;
         private Label label2;
         private System.Windows.Forms.Timer timer1;
+        private PictureBox pictureBox5;
     }
 }

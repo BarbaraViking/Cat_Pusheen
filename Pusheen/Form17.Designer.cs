@@ -1,6 +1,6 @@
 ﻿namespace Pusheen
 {
-    partial class Form15
+    partial class Form17
     {
         /// <summary>
         /// Required designer variable.
@@ -28,38 +28,62 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form15));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form17));
+            label1 = new Label();
+            label2 = new Label();
             pictureBox3 = new PictureBox();
             pictureBox2 = new PictureBox();
             pictureBox4 = new PictureBox();
-            label2 = new Label();
-            label1 = new Label();
+            pictureBox1 = new PictureBox();
+            pictureBox5 = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
             SuspendLayout();
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Font = new Font("MV Boli", 15.75F);
+            label1.Location = new Point(43, 67);
+            label1.Name = "label1";
+            label1.Size = new Size(668, 308);
+            label1.TabIndex = 37;
+            label1.Text = resources.GetString("label1.Text");
+            label1.Click += label1_Click;
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Font = new Font("MV Boli", 20.25F, FontStyle.Bold | FontStyle.Italic);
+            label2.Location = new Point(12, 9);
+            label2.Name = "label2";
+            label2.Size = new Size(684, 34);
+            label2.TabIndex = 36;
+            label2.Text = "Detective investigation: The Disappearing Crystal";
+            label2.Click += label2_Click;
             // 
             // pictureBox3
             // 
             pictureBox3.Image = (Image)resources.GetObject("pictureBox3.Image");
-            pictureBox3.Location = new Point(442, 69);
+            pictureBox3.Location = new Point(519, 143);
             pictureBox3.Name = "pictureBox3";
-            pictureBox3.Size = new Size(196, 197);
+            pictureBox3.Size = new Size(177, 161);
             pictureBox3.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox3.TabIndex = 29;
+            pictureBox3.TabIndex = 40;
             pictureBox3.TabStop = false;
-            pictureBox3.Click += pictureBox3_Click;
             // 
             // pictureBox2
             // 
             pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
-            pictureBox2.Location = new Point(5, 392);
+            pictureBox2.Location = new Point(665, 389);
             pictureBox2.Name = "pictureBox2";
             pictureBox2.Size = new Size(104, 59);
             pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox2.TabIndex = 28;
+            pictureBox2.TabIndex = 39;
             pictureBox2.TabStop = false;
-            pictureBox2.Click += pictureBox2_Click;
             // 
             // pictureBox4
             // 
@@ -68,55 +92,62 @@
             pictureBox4.Name = "pictureBox4";
             pictureBox4.Size = new Size(81, 71);
             pictureBox4.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox4.TabIndex = 26;
+            pictureBox4.TabIndex = 38;
             pictureBox4.TabStop = false;
             pictureBox4.Click += pictureBox4_Click;
             // 
-            // label2
+            // pictureBox1
             // 
-            label2.AutoSize = true;
-            label2.Font = new Font("MV Boli", 20.25F, FontStyle.Bold | FontStyle.Italic);
-            label2.Location = new Point(12, 9);
-            label2.Name = "label2";
-            label2.Size = new Size(651, 34);
-            label2.TabIndex = 18;
-            label2.Text = "Detective investigation: who ate the cookies? ";
+            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
+            pictureBox1.Location = new Point(2, 389);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(104, 59);
+            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox1.TabIndex = 41;
+            pictureBox1.TabStop = false;
+            pictureBox1.Click += pictureBox1_Click;
             // 
-            // label1
+            // pictureBox5
             // 
-            label1.AutoSize = true;
-            label1.Font = new Font("MV Boli", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label1.Location = new Point(43, 69);
-            label1.Name = "label1";
-            label1.Size = new Size(710, 280);
-            label1.TabIndex = 19;
-            label1.Text = resources.GetString("label1.Text");
-            label1.Click += label1_Click;
+            pictureBox5.Image = (Image)resources.GetObject("pictureBox5.Image");
+            pictureBox5.Location = new Point(506, 129);
+            pictureBox5.Name = "pictureBox5";
+            pictureBox5.Size = new Size(177, 161);
+            pictureBox5.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox5.TabIndex = 42;
+            pictureBox5.TabStop = false;
             // 
-            // Form15
+            // Form17
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(pictureBox5);
+            Controls.Add(label1);
+            Controls.Add(pictureBox1);
             Controls.Add(pictureBox3);
             Controls.Add(pictureBox2);
             Controls.Add(pictureBox4);
-            Controls.Add(label1);
             Controls.Add(label2);
-            Name = "Form15";
-            Text = "Form15";
+            Name = "Form17";
+            Text = "Form17";
             ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox5).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
+
+        private Label label1;
+        private Label label2;
         private PictureBox pictureBox3;
         private PictureBox pictureBox2;
         private PictureBox pictureBox4;
-        private Label label2;
-        private Label label1;
+        private PictureBox pictureBox1;
+        private PictureBox pictureBox5;
     }
 }

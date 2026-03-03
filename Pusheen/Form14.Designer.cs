@@ -50,6 +50,7 @@
             label1.Size = new Size(610, 308);
             label1.TabIndex = 17;
             label1.Text = resources.GetString("label1.Text");
+            label1.Click += label1_Click;
             // 
             // label2
             // 
@@ -70,6 +71,7 @@
             pictureBox3.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox3.TabIndex = 25;
             pictureBox3.TabStop = false;
+            pictureBox3.Click += pictureBox3_Click;
             // 
             // pictureBox2
             // 

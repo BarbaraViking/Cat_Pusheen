@@ -18,7 +18,7 @@ namespace Pusheen
         {
             InitializeComponent();
             this.BackColor = Color.FromArgb(252, 240, 228);
-            timer1.Interval = 50;
+            timer1.Interval = 40;
             timer1.Tick += Timer1_Tick;
             timer1.Start();
             label4.Text = "";
@@ -95,7 +95,7 @@ namespace Pusheen
         {
 
         }
-        
+
         private void label5_Click(object sender, EventArgs e)
         {
 
@@ -108,6 +108,16 @@ namespace Pusheen
         private void label2_Click_1(object sender, EventArgs e)
         {
 
+        }
+
+        private void pictureBox4_Click(object sender, EventArgs e)
+        {
+            Form2 form2 = new Form2();
+            form2.StartPosition = FormStartPosition.Manual;
+            form2.Location = this.Location;
+
+            form2.Show();
+            this.Hide();
         }
     }
 }

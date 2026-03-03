@@ -64,6 +64,7 @@
             pictureBox4.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox4.TabIndex = 17;
             pictureBox4.TabStop = false;
+            pictureBox4.Click += pictureBox4_Click;
             // 
             // progressBar1
             // 
@@ -72,7 +73,7 @@
             progressBar1.Name = "progressBar1";
             progressBar1.Size = new Size(436, 60);
             progressBar1.TabIndex = 18;
-            progressBar1.Click += this.progressBar1_Click;
+            progressBar1.Click += progressBar1_Click;
             // 
             // label2
             // 
@@ -105,7 +106,7 @@
             label5.Size = new Size(184, 114);
             label5.TabIndex = 22;
             label5.Text = "+0.1";
-            label5.Click += this.label5_Click;
+            label5.Click += label5_Click;
             // 
             // label6
             // 

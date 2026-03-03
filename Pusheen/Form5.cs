@@ -98,9 +98,16 @@ namespace Pusheen
         {
             Form3 form3 = new Form3();
             form3.Show();
+            this.Hide();
+
         }
 
         private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
         {
 
         }

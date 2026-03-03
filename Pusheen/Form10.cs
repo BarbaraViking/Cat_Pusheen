@@ -26,14 +26,34 @@ namespace Pusheen
 
         private void pictureBox2_Click(object sender, EventArgs e)
         {
-            Form9 form = new Form9();
-            form.Show();
+            Form9 form9 = new Form9();
+            form9.StartPosition = FormStartPosition.Manual;
+            form9.Location = this.Location;
+
+            form9.Show();
+            this.Hide();
+
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
             Form11 form11 = new Form11();
+            form11.StartPosition = FormStartPosition.Manual;
+            form11.Location = this.Location;
+
             form11.Show();
+            this.Hide();
+
+        }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox4_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

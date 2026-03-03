@@ -23,7 +23,12 @@ namespace Pusheen
         private void pictureBox2_Click(object sender, EventArgs e)
         {
             Form4 form4 = new Form4();
+            form4.StartPosition = FormStartPosition.Manual;
+            form4.Location = this.Location;
+
             form4.Show();
+            this.Hide();
+
         }
 
         private void label2_Click(object sender, EventArgs e)
@@ -39,20 +44,34 @@ namespace Pusheen
         private void pictureBox4_Click(object sender, EventArgs e)
         {
             Form2 form2 = new Form2();
+            form2.StartPosition = FormStartPosition.Manual;
+            form2.Location = this.Location;
+
             form2.Show();
+            this.Hide();
+
 
         }
 
         private void pictureBox3_Click(object sender, EventArgs e)
         {
             Form5 form5 = new Form5();
+            form5.StartPosition = FormStartPosition.Manual;
+            form5.Location = this.Location;
+
             form5.Show();
+            this.Hide();
+
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
             Form6 form6 = new Form6();
+            form6.StartPosition = FormStartPosition.Manual;
+            form6.Location = this.Location;
+
             form6.Show();
+            this.Hide();
         }
     }
 }
