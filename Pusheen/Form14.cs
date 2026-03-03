@@ -32,11 +32,11 @@ namespace Pusheen
 
         private void pictureBox4_Click(object sender, EventArgs e)
         {
-            Form2 form2 = new Form2();
-            form2.StartPosition = FormStartPosition.Manual;
-            form2.Location = this.Location;
+            Form12 form12 = new Form12();
+            form12.StartPosition = FormStartPosition.Manual;
+            form12.Location = this.Location;
 
-            form2.Show();
+            form12.Show();
             this.Hide();
 
         }

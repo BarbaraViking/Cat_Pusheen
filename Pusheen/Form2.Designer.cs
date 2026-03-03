@@ -45,10 +45,10 @@
             pictureBox7 = new PictureBox();
             label8 = new Label();
             label9 = new Label();
-            pictureBox8 = new PictureBox();
             pictureBox9 = new PictureBox();
             label10 = new Label();
             label11 = new Label();
+            pictureBox8 = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
@@ -56,8 +56,8 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox6).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox7).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox8).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox9).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox8).BeginInit();
             SuspendLayout();
             // 
             // pictureBox1
@@ -227,17 +227,6 @@
             label9.TabIndex = 17;
             label9.Text = "100%";
             // 
-            // pictureBox8
-            // 
-            pictureBox8.Image = (Image)resources.GetObject("pictureBox8.Image");
-            pictureBox8.Location = new Point(636, 305);
-            pictureBox8.Name = "pictureBox8";
-            pictureBox8.Size = new Size(108, 90);
-            pictureBox8.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox8.TabIndex = 18;
-            pictureBox8.TabStop = false;
-            pictureBox8.Click += pictureBox8_Click;
-            // 
             // pictureBox9
             // 
             pictureBox9.Image = (Image)resources.GetObject("pictureBox9.Image");
@@ -269,15 +258,25 @@
             label11.TabIndex = 21;
             label11.Text = "Walk";
             // 
+            // pictureBox8
+            // 
+            pictureBox8.Image = (Image)resources.GetObject("pictureBox8.Image");
+            pictureBox8.Location = new Point(636, 305);
+            pictureBox8.Name = "pictureBox8";
+            pictureBox8.Size = new Size(108, 90);
+            pictureBox8.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox8.TabIndex = 22;
+            pictureBox8.TabStop = false;
+            // 
             // Form2
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(pictureBox8);
             Controls.Add(label11);
             Controls.Add(label10);
             Controls.Add(pictureBox9);
-            Controls.Add(pictureBox8);
             Controls.Add(label9);
             Controls.Add(label8);
             Controls.Add(pictureBox7);
@@ -304,8 +303,8 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox5).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox6).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox7).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox8).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox9).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox8).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -328,9 +327,9 @@
         private PictureBox pictureBox7;
         private Label label8;
         private Label label9;
-        private PictureBox pictureBox8;
         private PictureBox pictureBox9;
         private Label label10;
         private Label label11;
+        private PictureBox pictureBox8;
     }
 }

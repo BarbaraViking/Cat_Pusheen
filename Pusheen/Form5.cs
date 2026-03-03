@@ -66,8 +66,13 @@ namespace Pusheen
                 label1.Text = $"{count_ball}/10";
                 if (count_ball == 10)
                 {
+                    
                     Form8 form8 = new Form8();
+                    form8.StartPosition = FormStartPosition.Manual;
+                    form8.Location = this.Location;
+
                     form8.Show();
+                    this.Hide();
                 }
 
                 // или выводим сообщение
@@ -96,7 +101,11 @@ namespace Pusheen
 
         private void pictureBox4_Click(object sender, EventArgs e)
         {
+
             Form3 form3 = new Form3();
+            form3.StartPosition = FormStartPosition.Manual;
+            form3.Location = this.Location;
+
             form3.Show();
             this.Hide();
 

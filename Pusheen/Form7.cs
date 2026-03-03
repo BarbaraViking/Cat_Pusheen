@@ -59,7 +59,11 @@ namespace Pusheen
             {
                 timer1.Stop();
                 Form8 form8 = new Form8();
+                form8.StartPosition = FormStartPosition.Manual;
+                form8.Location = this.Location;
+
                 form8.Show();
+                this.Hide();
             }
         }
 
@@ -118,6 +122,11 @@ namespace Pusheen
 
             form2.Show();
             this.Hide();
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

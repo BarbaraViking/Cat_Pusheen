@@ -35,5 +35,15 @@ namespace Pusheen
         {
 
         }
+
+        private void pictureBox10_Click(object sender, EventArgs e)
+        {
+            Form2 form2 = new Form2();
+            form2.StartPosition = FormStartPosition.Manual;
+            form2.Location = this.Location;
+
+            form2.Show();
+            this.Hide();
+        }
     }
 }

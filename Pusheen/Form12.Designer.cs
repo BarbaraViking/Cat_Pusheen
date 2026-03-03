@@ -32,11 +32,8 @@
             label2 = new Label();
             pictureBox3 = new PictureBox();
             label1 = new Label();
-            pictureBox1 = new PictureBox();
-            label3 = new Label();
             pictureBox4 = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
             SuspendLayout();
             // 
@@ -53,7 +50,7 @@
             // pictureBox3
             // 
             pictureBox3.Image = (Image)resources.GetObject("pictureBox3.Image");
-            pictureBox3.Location = new Point(29, 149);
+            pictureBox3.Location = new Point(235, 149);
             pictureBox3.Name = "pictureBox3";
             pictureBox3.Size = new Size(357, 221);
             pictureBox3.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -65,32 +62,11 @@
             // 
             label1.AutoSize = true;
             label1.Font = new Font("MV Boli", 15.25F, FontStyle.Bold | FontStyle.Italic);
-            label1.Location = new Point(63, 108);
+            label1.Location = new Point(269, 108);
             label1.Name = "label1";
             label1.Size = new Size(266, 56);
             label1.TabIndex = 23;
             label1.Text = "Detective investigation:\r\n who ate the cookies? ";
-            // 
-            // pictureBox1
-            // 
-            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(416, 149);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(357, 221);
-            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox1.TabIndex = 24;
-            pictureBox1.TabStop = false;
-            pictureBox1.Click += pictureBox1_Click;
-            // 
-            // label3
-            // 
-            label3.AutoSize = true;
-            label3.Font = new Font("MV Boli", 15.25F, FontStyle.Bold | FontStyle.Italic);
-            label3.Location = new Point(472, 108);
-            label3.Name = "label3";
-            label3.Size = new Size(266, 56);
-            label3.TabIndex = 25;
-            label3.Text = "Detective investigation:\r\n where is the crystal?";
             // 
             // pictureBox4
             // 
@@ -109,8 +85,6 @@
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
             Controls.Add(pictureBox4);
-            Controls.Add(label3);
-            Controls.Add(pictureBox1);
             Controls.Add(label1);
             Controls.Add(pictureBox3);
             Controls.Add(label2);
@@ -118,7 +92,6 @@
             Text = "Form12";
             Load += Form12_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
             ResumeLayout(false);
             PerformLayout();
@@ -129,8 +102,6 @@
         private Label label2;
         private PictureBox pictureBox3;
         private Label label1;
-        private PictureBox pictureBox1;
-        private Label label3;
         private PictureBox pictureBox4;
     }
 }
