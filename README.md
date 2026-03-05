@@ -1,4 +1,5 @@
-![C#](https://img.shields.io/badge/C#-.NET9.0-blue)
+![C#](https://img.shields.io/badge/C%23-239120?logo=csharp&logoColor=white)
+![.NET](https://img.shields.io/badge/.NET-512BD4?logo=dotnet&logoColor=white)
 ## 📌 Оглавление
 
 - [Описание](#-описание)
