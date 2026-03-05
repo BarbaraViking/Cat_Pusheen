@@ -15,6 +15,7 @@ namespace Pusheen
     {
         static int happy = 100;
         bool isClicked = false;
+        public int plus = 15;
         Stopwatch sw = new Stopwatch();
 
         bool next = false;
@@ -27,7 +28,7 @@ namespace Pusheen
             sw.Start();
             timer1.Interval = 40;
             timer1.Tick += Timer1_Tick;
-            
+            if (happy > 100) happy = 100;
             progressBar1.Value = happy;
             timer1.Start();
             label8.Text = $"{progressBar1.Value}%";
@@ -61,27 +62,27 @@ namespace Pusheen
             }
         }
         private void ProgressBar1_Paint(object sender, PaintEventArgs e)
-{
-    Rectangle rect = progressBar1.ClientRectangle;
+        {
+            Rectangle rect = progressBar1.ClientRectangle;
 
-    // фон
-    e.Graphics.FillRectangle(Brushes.LightGray, rect);
+            // фон
+            e.Graphics.FillRectangle(Brushes.LightGray, rect);
 
-    // вычисляем ширину прогресса
-    rect.Width = (int)(rect.Width * ((double)progressBar1.Value / progressBar1.Maximum));
+            // вычисляем ширину прогресса
+            rect.Width = (int)(rect.Width * ((double)progressBar1.Value / progressBar1.Maximum));
 
-    // выбираем цвет в зависимости от значения
-    Brush progressColor;
-    if (progressBar1.Value > 70)
-        progressColor = Brushes.Green;
-    else if (progressBar1.Value > 30)
-        progressColor = Brushes.Orange;
-    else
-        progressColor = Brushes.Red;
+            // выбираем цвет в зависимости от значения
+            Brush progressColor;
+            if (progressBar1.Value > 70)
+                progressColor = Brushes.Green;
+            else if (progressBar1.Value > 30)
+                progressColor = Brushes.Orange;
+            else
+                progressColor = Brushes.Red;
 
-    // рисуем прогресс
-    e.Graphics.FillRectangle(progressColor, 0, 0, rect.Width, rect.Height);
-}
+            // рисуем прогресс
+            e.Graphics.FillRectangle(progressColor, 0, 0, rect.Width, rect.Height);
+        }
         private void label1_Click(object sender, EventArgs e)
         {
 
@@ -105,7 +106,7 @@ namespace Pusheen
 
             form7.Show();
             this.Hide();
-            happy+= 1;
+            happy += plus;
             isClicked = true;
 
         }
@@ -127,9 +128,9 @@ namespace Pusheen
             string randomItem = variants[rd.Next(variants.Length)];
             pictureBox1.Image = Image.FromFile(randomItem);
             await Task.Delay(2000);
-            happy += 10;
+            happy += plus;
             isClicked = true;
-            await Task.Delay(5000);
+            await Task.Delay(15000);
             isClicked = false;
             pictureBox1.Image = Image.FromFile(@"C:\Users\barbara\Downloads\gif\sleep1.gif");
 
@@ -154,9 +155,9 @@ namespace Pusheen
 
             form12.Show();
             this.Hide();
-            happy += 10;
+            happy += plus;
             isClicked = true;
-            await Task.Delay(5000);
+            await Task.Delay(15000);
             isClicked = false;
 
         }
@@ -169,9 +170,9 @@ namespace Pusheen
 
             form13.Show();
             this.Hide();
-            happy += 10;
+            happy += plus;
             isClicked = true;
-            await Task.Delay(5000);
+            await Task.Delay(15000);
             isClicked = false;
         }
 
@@ -188,13 +189,33 @@ namespace Pusheen
 
             form16.Show();
             this.Hide();
-            happy += 10;
+            happy += plus;
             isClicked = true;
-            await Task.Delay(5000);
+            await Task.Delay(15000);
             isClicked = false;
         }
 
         private void pictureBox6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label9_Click(object sender, EventArgs e)
+        {
+            chatgpt chatgpt1 = new chatgpt();
+            chatgpt1.StartPosition = FormStartPosition.Manual;
+            chatgpt1.Location = this.Location;
+
+            chatgpt1.Show();
+            this.Hide();
+        }
+
+        private void pictureBox6_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label5_Click(object sender, EventArgs e)
         {
 
         }

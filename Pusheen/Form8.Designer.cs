@@ -78,6 +78,7 @@
             Controls.Add(label1);
             Name = "Form8";
             Text = "Form8";
+            Load += Form8_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox10).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);

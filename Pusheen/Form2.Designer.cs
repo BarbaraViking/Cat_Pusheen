@@ -49,6 +49,9 @@
             label7 = new Label();
             timer1 = new System.Windows.Forms.Timer(components);
             progressBar1 = new ProgressBar();
+            pictureBox6 = new PictureBox();
+            label9 = new Label();
+            pictureBox7 = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
@@ -56,12 +59,14 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox9).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox8).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox6).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox7).BeginInit();
             SuspendLayout();
             // 
             // pictureBox1
             // 
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(176, 102);
+            pictureBox1.Location = new Point(175, 98);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(404, 236);
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -158,11 +163,12 @@
             // 
             label5.AutoSize = true;
             label5.Font = new Font("MV Boli", 7F, FontStyle.Bold);
-            label5.Location = new Point(12, 428);
+            label5.Location = new Point(454, 428);
             label5.Name = "label5";
             label5.Size = new Size(334, 13);
             label5.TabIndex = 9;
             label5.Text = "all gif images were taken from the website pusheen.com";
+            label5.Click += label5_Click;
             // 
             // label6
             // 
@@ -244,11 +250,48 @@
             progressBar1.Size = new Size(153, 28);
             progressBar1.TabIndex = 24;
             // 
+            // pictureBox6
+            // 
+            pictureBox6.Image = (Image)resources.GetObject("pictureBox6.Image");
+            pictureBox6.Location = new Point(264, 333);
+            pictureBox6.Name = "pictureBox6";
+            pictureBox6.Size = new Size(238, 77);
+            pictureBox6.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox6.TabIndex = 33;
+            pictureBox6.TabStop = false;
+            pictureBox6.Click += pictureBox6_Click_1;
+            // 
+            // label9
+            // 
+            label9.AutoSize = true;
+            label9.BackColor = Color.Pink;
+            label9.Font = new Font("MV Boli", 20F, FontStyle.Bold);
+            label9.Location = new Point(283, 361);
+            label9.Name = "label9";
+            label9.Size = new Size(165, 34);
+            label9.TabIndex = 34;
+            label9.Text = "Pusheen AI";
+            label9.Click += label9_Click;
+            // 
+            // pictureBox7
+            // 
+            pictureBox7.BackColor = Color.Pink;
+            pictureBox7.Image = (Image)resources.GetObject("pictureBox7.Image");
+            pictureBox7.Location = new Point(445, 355);
+            pictureBox7.Name = "pictureBox7";
+            pictureBox7.Size = new Size(46, 40);
+            pictureBox7.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox7.TabIndex = 35;
+            pictureBox7.TabStop = false;
+            // 
             // Form2
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(pictureBox7);
+            Controls.Add(label9);
+            Controls.Add(pictureBox6);
             Controls.Add(progressBar1);
             Controls.Add(label7);
             Controls.Add(pictureBox8);
@@ -277,6 +320,8 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox5).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox9).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox8).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox6).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox7).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -302,5 +347,8 @@
         private Label label7;
         private System.Windows.Forms.Timer timer1;
         private ProgressBar progressBar1;
+        private PictureBox pictureBox6;
+        private Label label9;
+        private PictureBox pictureBox7;
     }
 }
