@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form2));
             pictureBox1 = new PictureBox();
             pictureBox2 = new PictureBox();
@@ -40,16 +41,24 @@
             label4 = new Label();
             label5 = new Label();
             label6 = new Label();
-            label7 = new Label();
-            pictureBox6 = new PictureBox();
-            pictureBox7 = new PictureBox();
             label8 = new Label();
+            pictureBox9 = new PictureBox();
+            label10 = new Label();
+            label11 = new Label();
+            pictureBox8 = new PictureBox();
+            label7 = new Label();
+            timer1 = new System.Windows.Forms.Timer(components);
+            progressBar1 = new ProgressBar();
+            pictureBox6 = new PictureBox();
             label9 = new Label();
+            pictureBox7 = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox9).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox8).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox6).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox7).BeginInit();
             SuspendLayout();
@@ -57,58 +66,63 @@
             // pictureBox1
             // 
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(176, 102);
+            pictureBox1.Location = new Point(175, 98);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(404, 236);
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox1.TabIndex = 0;
             pictureBox1.TabStop = false;
+            pictureBox1.Click += pictureBox1_Click_1;
             // 
             // pictureBox2
             // 
             pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
             pictureBox2.Location = new Point(24, 63);
             pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(125, 117);
+            pictureBox2.Size = new Size(108, 90);
             pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox2.TabIndex = 1;
             pictureBox2.TabStop = false;
+            pictureBox2.Click += pictureBox2_Click;
             // 
             // pictureBox3
             // 
             pictureBox3.Image = (Image)resources.GetObject("pictureBox3.Image");
-            pictureBox3.Location = new Point(24, 208);
+            pictureBox3.Location = new Point(24, 186);
             pictureBox3.Name = "pictureBox3";
-            pictureBox3.Size = new Size(125, 109);
+            pictureBox3.Size = new Size(108, 90);
             pictureBox3.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox3.TabIndex = 2;
             pictureBox3.TabStop = false;
+            pictureBox3.Click += pictureBox3_Click;
             // 
             // pictureBox4
             // 
             pictureBox4.Image = (Image)resources.GetObject("pictureBox4.Image");
             pictureBox4.Location = new Point(636, 63);
             pictureBox4.Name = "pictureBox4";
-            pictureBox4.Size = new Size(125, 117);
+            pictureBox4.Size = new Size(108, 90);
             pictureBox4.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox4.TabIndex = 3;
             pictureBox4.TabStop = false;
+            pictureBox4.Click += pictureBox4_Click;
             // 
             // pictureBox5
             // 
             pictureBox5.Image = (Image)resources.GetObject("pictureBox5.Image");
-            pictureBox5.Location = new Point(636, 208);
+            pictureBox5.Location = new Point(636, 186);
             pictureBox5.Name = "pictureBox5";
-            pictureBox5.Size = new Size(125, 117);
+            pictureBox5.Size = new Size(108, 90);
             pictureBox5.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox5.TabIndex = 4;
             pictureBox5.TabStop = false;
+            pictureBox5.Click += pictureBox5_Click;
             // 
             // label1
             // 
             label1.AutoSize = true;
             label1.Font = new Font("MV Boli", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.Location = new Point(664, 328);
+            label1.Location = new Point(654, 155);
             label1.Name = "label1";
             label1.Size = new Size(67, 28);
             label1.TabIndex = 5;
@@ -119,7 +133,7 @@
             // 
             label2.AutoSize = true;
             label2.Font = new Font("MV Boli", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label2.Location = new Point(664, 32);
+            label2.Location = new Point(659, 32);
             label2.Name = "label2";
             label2.Size = new Size(62, 28);
             label2.TabIndex = 6;
@@ -129,7 +143,7 @@
             // 
             label3.AutoSize = true;
             label3.Font = new Font("MV Boli", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label3.Location = new Point(50, 328);
+            label3.Location = new Point(50, 156);
             label3.Name = "label3";
             label3.Size = new Size(49, 28);
             label3.TabIndex = 7;
@@ -149,83 +163,142 @@
             // 
             label5.AutoSize = true;
             label5.Font = new Font("MV Boli", 7F, FontStyle.Bold);
-            label5.Location = new Point(12, 428);
+            label5.Location = new Point(454, 428);
             label5.Name = "label5";
             label5.Size = new Size(334, 13);
             label5.TabIndex = 9;
             label5.Text = "all gif images were taken from the website pusheen.com";
+            label5.Click += label5_Click;
             // 
             // label6
             // 
             label6.AutoSize = true;
             label6.Font = new Font("MV Boli", 11F, FontStyle.Bold);
-            label6.Location = new Point(190, 12);
+            label6.Location = new Point(215, 46);
             label6.Name = "label6";
             label6.Size = new Size(62, 20);
             label6.TabIndex = 11;
             label6.Text = "Happy:";
             // 
-            // label7
-            // 
-            label7.AutoSize = true;
-            label7.Font = new Font("MV Boli", 11F, FontStyle.Bold);
-            label7.Location = new Point(190, 53);
-            label7.Name = "label7";
-            label7.Size = new Size(82, 20);
-            label7.TabIndex = 13;
-            label7.Text = "Healthing";
-            // 
-            // pictureBox6
-            // 
-            pictureBox6.Image = (Image)resources.GetObject("pictureBox6.Image");
-            pictureBox6.Location = new Point(258, -2);
-            pictureBox6.Name = "pictureBox6";
-            pictureBox6.Size = new Size(164, 39);
-            pictureBox6.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox6.TabIndex = 14;
-            pictureBox6.TabStop = false;
-            // 
-            // pictureBox7
-            // 
-            pictureBox7.Image = (Image)resources.GetObject("pictureBox7.Image");
-            pictureBox7.Location = new Point(278, 43);
-            pictureBox7.Name = "pictureBox7";
-            pictureBox7.Size = new Size(164, 39);
-            pictureBox7.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox7.TabIndex = 15;
-            pictureBox7.TabStop = false;
-            // 
             // label8
             // 
             label8.AutoSize = true;
             label8.Font = new Font("MV Boli", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label8.Location = new Point(428, 6);
+            label8.Location = new Point(451, 40);
             label8.Name = "label8";
             label8.Size = new Size(69, 28);
             label8.TabIndex = 16;
             label8.Text = "100%";
             label8.Click += label8_Click;
             // 
+            // pictureBox9
+            // 
+            pictureBox9.Image = (Image)resources.GetObject("pictureBox9.Image");
+            pictureBox9.Location = new Point(24, 305);
+            pictureBox9.Name = "pictureBox9";
+            pictureBox9.Size = new Size(108, 90);
+            pictureBox9.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox9.TabIndex = 19;
+            pictureBox9.TabStop = false;
+            pictureBox9.Click += pictureBox9_Click;
+            // 
+            // label10
+            // 
+            label10.AutoSize = true;
+            label10.Font = new Font("MV Boli", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label10.Location = new Point(50, 279);
+            label10.Name = "label10";
+            label10.Size = new Size(56, 28);
+            label10.TabIndex = 20;
+            label10.Text = "Play";
+            // 
+            // label11
+            // 
+            label11.AutoSize = true;
+            label11.Font = new Font("MV Boli", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label11.Location = new Point(665, 279);
+            label11.Name = "label11";
+            label11.Size = new Size(60, 28);
+            label11.TabIndex = 21;
+            label11.Text = "Walk";
+            // 
+            // pictureBox8
+            // 
+            pictureBox8.Image = (Image)resources.GetObject("pictureBox8.Image");
+            pictureBox8.Location = new Point(636, 305);
+            pictureBox8.Name = "pictureBox8";
+            pictureBox8.Size = new Size(108, 90);
+            pictureBox8.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox8.TabIndex = 22;
+            pictureBox8.TabStop = false;
+            pictureBox8.Click += pictureBox8_Click_1;
+            // 
+            // label7
+            // 
+            label7.AutoSize = true;
+            label7.Font = new Font("MV Boli", 7F, FontStyle.Bold);
+            label7.Location = new Point(12, 398);
+            label7.Name = "label7";
+            label7.Size = new Size(171, 13);
+            label7.TabIndex = 23;
+            label7.Text = "happiness will not be added!";
+            // 
+            // progressBar1
+            // 
+            progressBar1.Location = new Point(283, 40);
+            progressBar1.Name = "progressBar1";
+            progressBar1.Size = new Size(153, 28);
+            progressBar1.TabIndex = 24;
+            // 
+            // pictureBox6
+            // 
+            pictureBox6.Image = (Image)resources.GetObject("pictureBox6.Image");
+            pictureBox6.Location = new Point(264, 333);
+            pictureBox6.Name = "pictureBox6";
+            pictureBox6.Size = new Size(238, 77);
+            pictureBox6.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox6.TabIndex = 33;
+            pictureBox6.TabStop = false;
+            pictureBox6.Click += pictureBox6_Click_1;
+            // 
             // label9
             // 
             label9.AutoSize = true;
-            label9.Font = new Font("MV Boli", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label9.Location = new Point(448, 53);
+            label9.BackColor = Color.Pink;
+            label9.Font = new Font("MV Boli", 20F, FontStyle.Bold);
+            label9.Location = new Point(283, 361);
             label9.Name = "label9";
-            label9.Size = new Size(69, 28);
-            label9.TabIndex = 17;
-            label9.Text = "100%";
+            label9.Size = new Size(165, 34);
+            label9.TabIndex = 34;
+            label9.Text = "Pusheen AI";
+            label9.Click += label9_Click;
+            // 
+            // pictureBox7
+            // 
+            pictureBox7.BackColor = Color.Pink;
+            pictureBox7.Image = (Image)resources.GetObject("pictureBox7.Image");
+            pictureBox7.Location = new Point(445, 355);
+            pictureBox7.Name = "pictureBox7";
+            pictureBox7.Size = new Size(46, 40);
+            pictureBox7.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox7.TabIndex = 35;
+            pictureBox7.TabStop = false;
             // 
             // Form2
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
-            Controls.Add(label9);
-            Controls.Add(label8);
             Controls.Add(pictureBox7);
+            Controls.Add(label9);
             Controls.Add(pictureBox6);
+            Controls.Add(progressBar1);
             Controls.Add(label7);
+            Controls.Add(pictureBox8);
+            Controls.Add(label11);
+            Controls.Add(label10);
+            Controls.Add(pictureBox9);
+            Controls.Add(label8);
             Controls.Add(label6);
             Controls.Add(label5);
             Controls.Add(label4);
@@ -239,11 +312,14 @@
             Controls.Add(pictureBox1);
             Name = "Form2";
             Text = "Form2";
+            Load += Form2_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox5).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox9).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox8).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox6).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox7).EndInit();
             ResumeLayout(false);
@@ -263,10 +339,16 @@
         private Label label4;
         private Label label5;
         private Label label6;
-        private Label label7;
-        private PictureBox pictureBox6;
-        private PictureBox pictureBox7;
         private Label label8;
+        private PictureBox pictureBox9;
+        private Label label10;
+        private Label label11;
+        private PictureBox pictureBox8;
+        private Label label7;
+        private System.Windows.Forms.Timer timer1;
+        private ProgressBar progressBar1;
+        private PictureBox pictureBox6;
         private Label label9;
+        private PictureBox pictureBox7;
     }
 }
